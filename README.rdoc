@@ -14,7 +14,7 @@ Step5:
 
 Make application folder as current folder and then enter the follwoing commands on terminal
 
-bundle update(it take some time to update the gems) rake db:create (it creates the database) rake db:migrate (migrates the dbsechema) rake db:seed (seeds teacher into users table)
+bundle install(it take some time to update the gems) rake db:create (it creates the database) rake db:migrate (migrates the dbsechema) rake db:seed (seeds teacher into users table)
 
 Finally start rails server.
 
