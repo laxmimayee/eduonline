@@ -1,0 +1,48 @@
+# if you use pgsql then use this setting 
+# development:
+#   adapter: postgresql
+#   database: edu_ol_development
+#   pool: 5
+#   timeout: 5000
+
+# production:
+#   adapter: postgresql
+#   database: edu_ol_production
+#   pool: 5
+#   timeout: 5000
+
+# if you use mysql the use this settings
+
+
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: online_development #change database name as you want
+  pool: 5
+  username: root   #user name while you created mysql installation
+  password: gopi  #password which you have given during mysql installation
+  host: localhost
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: online_test
+  pool: 5
+  username: root
+  password: gopi
+  host: localhost
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: online_production
+  pool: 5
+  username: root
+  password: gopi
+  host: localhost
+
+
+

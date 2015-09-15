@@ -1,0 +1,21 @@
+== README
+
+Education_onlineTest Step1: Please clone this code.
+
+Step2: then add a teacher email address in (db/seed.rb) which will receive the teacher confirmation mail and user name to login.
+
+Step3: Then add a gmail address in config/environments/development.rb (as showned lines) ActionMailer::Base.smtp_settings = { :address => "smtp.gmail.com", :port => 587, :domain => "mail.gmail.com", :user_name => "XXXX@gmail.com", :password => "XX", :authentication => "plain", :enable_starttls_auto => true }
+
+Step 4: Update the database.yml file with your mysql user name and password.
+
+if you are using pgsql then comment the current active code then uncomment pg code and update with your password.
+
+Step5:
+
+Make application folder as current folder and then enter the follwoing commands on terminal
+
+bundle update(it take some time to update the gems) rake db:create (it creates the database) rake db:migrate (migrates the dbsechema) rake db:seed (seeds teacher into users table)
+
+Finally start rails server.
+
+
