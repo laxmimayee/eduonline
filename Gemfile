@@ -42,7 +42,8 @@ group :development, :test do
 end
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
-gem 'mysql2'
+gem 'sqlite3'
+#gem 'mysql2'
 #gem 'pg'
 #gem 'haml-rails'
 gem 'font-awesome-rails', '~> 4.2.0.0'
