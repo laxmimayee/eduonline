@@ -6,11 +6,18 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-def seed_teachers
-  @user_teacher = User.find_by_role("teacher")
-  unless @user_teacher.present?
-    User.create(:name => "Teacher", :role => "teacher", :email => "XXXX@gmail.com" , :password => "hellohello")
-  end
-end
+#def seed_teachers
+ # @user_teacher = User.find_by_role("teacher")
+ # unless @user_teacher.present?
+ #   User.create(:name => "Teacher", :role => "teacher", :email => "XXXX@gmail.com" , :password => "hellohello")
+ # end
+  
+   user = User.new(:name => "Teacher", :role => "teacher", :email => "teacher@example.com" , :password => "hellohello"
+                  )                    
+  user.skip_confirmation!
+  user.save
+  
+  
+#end
 
-seed_teachers
+#seed_teachers
