@@ -26,7 +26,7 @@
         <div class="form-group">
           <%= f.label :password, :class => 'col-md-3 control-label' %>
           <em>
-            (8 characters minimum)
+            (#{@minimum_password_length} characters minimum)
           </em>
           <div class="col-md-9">
             <%= f.password_field :password, autocomplete: "off", :class => "form-control" %>
